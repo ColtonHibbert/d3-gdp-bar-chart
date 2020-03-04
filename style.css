@@ -10,11 +10,8 @@ body {
  fill: lightgreen;
 }
 
-
-.tool {
+/*.tool {
+    opacity: 0;
     visibility: hidden;
-}
-
-.tool:hover { 
-    visibility: visible;
-}
+    position: absolute;
+}*/
