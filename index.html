@@ -6,7 +6,6 @@
         <script src="https://d3js.org/d3.v5.min.js"></script>  
         <link rel="stylesheet" type='text/css' href='style.css'> 
         
-        
     </head>
     
     <body>
@@ -112,7 +111,6 @@
                 .attr('data-date', (gdpInfo) => d[0])
                 .attr('data-gdp', (gdpInfo) => d[1])
                 .style('opacity', 1)
-                //.text(gdpInfo)
 
                 const getYearRegex = /[0-9]{4}/;
                 const getMonthWithHyphenRegex = /-[0-9]{2}/;
@@ -147,10 +145,6 @@
                  .style('opacity', 0)
             })
 
-           
-            
-            
-
             let xAxis = d3.axisBottom(xScale).tickFormat(d3.format("d"))
 
             svg.append("g")
@@ -169,39 +163,6 @@
             .attr('class', 'tick')
         }
         getDataThenRunPage();
-        // const svg = d3.select("#d3render")
-        // .append('svg')
-        // .attr('width', 500)
-        // .attr('height', 500)
-        // .style('background-color', 'orange')
-
-        // svg.append('circle')
-        // .attr('id', 'centercircle')
-        // .attr('cx', 250)
-        // .attr('cy', 250)
-        // .attr('r', 25)
-        // .attr('fill', 'purple')
-
-        // d3.select('#centercircle')
-        //     .on('mouseover', function(){
-        //         console.log('mouseover')
-        //         d3.select('#tooltip').style('top', "400px").style('left', '400px')
-        //     })
         
-        
-        
-
-        // .append('div')
-        // .attr('id', 'datedisplay')
-        // .style('height', '40px')
-        // .style('width', '120px')
-        // .text('div1')
-        // .append('div')
-        // .attr('id', 'gdpdisplay')
-        // .style('height', '40px')
-        // .style('width', '120px')
-        // .text('div2')
-        
-
     </script>
 </html>
